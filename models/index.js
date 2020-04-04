@@ -10,7 +10,11 @@ const sequelize = new Sequelize({
   host: '127.0.0.1',
   database: 'newshop',
   username: 'root',
-  password: ''
+  password: '',
+  loging: false,
+  define: {
+    timestamps: false
+  }
 })
 
 glob.sync('*.js', { cwd: __dirname })

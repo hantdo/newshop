@@ -1,9 +1,8 @@
 /**
  * 账号控制器
  */
-const models = require('../models/')
+const { User } = require('../models/')
 
-console.log(models)
 
  exports.login = (req, res) => {
      res.send('login')
@@ -21,6 +20,10 @@ console.log(models)
     if (!(username && email && password && confirm && agree)){
        return res.render('register', { msg: '必须完整填写表单' })
     }
+    User.findAll({ where: { username }})
+        .then(data => {
+            console.log(data)
+        })
     // 2.持久化
     // 3.响应
     res.send('ok')
