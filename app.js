@@ -10,7 +10,7 @@ const routers = require('./routers')
 
 const app = express()
 
-app.engine('hbs',hbs.express4())
+app.engine('hbs', hbs.express4())
 // view engine setup
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))

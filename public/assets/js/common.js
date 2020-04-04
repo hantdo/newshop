@@ -36,7 +36,7 @@ $(function ($) {
 
       // 面板内容
       $('.toolbar-panel').css('visibility', 'hidden')
-      $('.tbar-panel-' + target).css({ 'visibility': 'visible', 'z-index': '1' })
+      $('.tbar-panel-' + target).css({ visibility: 'visible', 'z-index': '1' })
 
       // 面板显示
       $('.toolbar-wrap').addClass('toolbar-open')
