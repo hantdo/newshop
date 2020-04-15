@@ -13,15 +13,24 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-hbs": "^2.3.2",
+    "express-session": "^1.17.0",
     "glob": "^7.1.6",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^2.1.0",
-    "sequelize": "^5.21.5"
+    "nodemailer": "^6.4.6",
+    "sequelize": "^5.21.5",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
     "nodemon": "^2.0.2",
     "standard": "^14.3.3"
+  },
+  "standard": {
+    "ignore": [
+      "public"
+    ],
+    "fix": true
   }
 }
